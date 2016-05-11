@@ -9,3 +9,7 @@ This is a tutorial on making histograms in Stata for beginners.
 * [Oaxaca-Blinder Decomposition](https://github.com/Kolpashnikova/Stata/blob/master/oaxaca.md)
 
 Here you will find a small demostration of the two-fold pooled Oaxaca-Blinder decomposition.
+
+* [Building Trend Lines](https://github.com/Kolpashnikova/Stata/blob/master/Trends.md)
+
+This is a short introduction to how to make trendlines (using means).
