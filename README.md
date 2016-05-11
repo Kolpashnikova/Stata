@@ -17,3 +17,7 @@ This is a short introduction to how to make trendlines (using means).
 * [Pearson's Chi-squared Test](https://github.com/Kolpashnikova/Stata/blob/master/chi.md)
 
 Here you can find a tutorial for performing chi-squared test in Stata with interpretation.
+
+* [Gamma test for ordinal variables](https://github.com/Kolpashnikova/Stata/blob/master/gamma.md)
+
+This is a small tutorial on how to perform the gamma test with ordinal variables in Stata and its interpretation.
