@@ -13,3 +13,7 @@ Here you will find a small demostration of the two-fold pooled Oaxaca-Blinder de
 * [Building Trend Lines](https://github.com/Kolpashnikova/Stata/blob/master/Trends.md)
 
 This is a short introduction to how to make trendlines (using means).
+
+* [Pearson's Chi-squared Test](https://github.com/Kolpashnikova/Stata/blob/master/chi.md)
+
+Here you can find a tutorial for performing chi-squared test in Stata with interpretation.
