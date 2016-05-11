@@ -47,7 +47,7 @@ tw (connected mn_DVCOOKF Year, ms(S))(connected mn_DVCOOKM Year), ///
 	yscale(range(0 100)) ///
 	ylabel(0[10]100) ///
 	name(cook, replace)
-graph export 003.png, as(png) 
+graph export 003.png, as(png) replace 
 NA
 ```
 
@@ -70,11 +70,7 @@ NA
 >         ylabel(0[10]100) ///
 >         name(cook, replace)
 
-. graph export 003.png, as(png) 
-file 003.png already exists
-r(602);
-
-end of do-file
-r(602);
+. graph export 003.png, as(png) replace 
+(file 003.png written in PNG format)
 ```
  <img src="003.png" height="500" width="500"> 

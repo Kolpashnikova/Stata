@@ -54,6 +54,6 @@ tw (connected mn_DVCOOKF Year, ms(S))(connected mn_DVCOOKM Year), ///
 	yscale(range(0 100)) ///
 	ylabel(0[10]100) ///
 	name(cook, replace)
-graph export 003.png, as(png) 
+graph export 003.png, as(png) replace 
 ```
  <img src="003.png" height="500" width="500"> 
