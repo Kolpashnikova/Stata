@@ -1,0 +1,69 @@
+---
+title: "gamma"
+author: "Kamila Kolpashnikova"
+output:  
+      html_document:  
+        keep_md: true 
+---
+
+# Gamma test
+
+
+```{r, echo=FALSE, message=FALSE}
+require(knitr)
+statapath <- "C:/Program Files (x86)/Stata12/StataSE-64.exe"
+opts_chunk$set(engine="stata", engine.path=statapath, comment="")
+```
+
+The data here is derived from the [American Time Use Survey](http://www.bls.gov/tus/). For the coding procedures, contact me via email.
+
+## Step 1. Downloading the dataset
+You need to download the ATUS_full3.dta file from my github to your working directory.
+
+```{r, results='hide'}
+use ATUS_full3.dta, clear
+```
+
+
+
+## Step 2. Choose ordinal variables
+
+In the datase, I will use two ordinal variables. One which is education (EduInYears) and another one is age group (Age).
+
+```{r, echo=2:3}
+use ATUS_full3.dta, clear
+sum EduInYears
+sum Age
+```
+
+## Step 3. Peform gamma test
+
+You use an option `gamma` with the `tabulate` command.
+
+```{r, echo=2}
+use ATUS_full3.dta, clear
+tab EduInYears Age, gamma
+```
+
+In the output above, the gamma = 0.0359 and Stata also shows ASE (Asymptotic Standard Error) = 0.002. To calculate z-value you need to divide gamma by ASE.
+
+```{r}
+display 0.0359/0.002
+```
+
+Using a table for z-values, we can find that for z=17.95, p <0.001 (let's assume that this is our alpha-level).
+
+## Step 4. Interpretation
+
+Gamma is a PRE measure (PRE - proportional reduction of error), so you can tell the strength of the association between the two variables using gamma. 
+
+The p-value provides us with evidence to reject the null hypothesis of statistical independence.
+
+We are more than 99.9% ($(1-\alpha-level)*100$) confident that we can reject the null hypothesis. 
+OR 
+There is less than 0.1% ($\alpha-level*100$) chance that the relation between `dependent variable` and `independent variable` is due to chance.
+
+Therefore, we conclude that:
+
+The two variables are associated, i.e., they are not statistically independent.
+The Gamma coefficient tells us that the errors in predicting the `dependent variable` are reduced by a proportion of 0.0359 (the value of Gamma coefficient) when you know the `independent variable`.
