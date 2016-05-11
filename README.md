@@ -6,6 +6,6 @@ Check the R markdown files:
 
 This is a tutorial on making histograms in Stata for beginners. 
 
-* [Oaxaca-Blinder Decompositon](https://github.com/Kolpashnikova/Stata/blob/master/oaxaca.md)
+* [Oaxaca-Blinder Decomposition](https://github.com/Kolpashnikova/Stata/blob/master/oaxaca.md)
 
 Here you will find a small demostration of the two-fold pooled Oaxaca-Blinder decomposition.
