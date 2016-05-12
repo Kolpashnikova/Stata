@@ -21,3 +21,7 @@ Here you can find a tutorial for performing chi-squared test in Stata with inter
 * [Gamma test for ordinal variables](https://github.com/Kolpashnikova/Stata/blob/master/gamma.md)
 
 This is a small tutorial on how to perform the gamma test with ordinal variables in Stata and its interpretation.
+
+* [T-test](https://github.com/Kolpashnikova/Stata/blob/master/ttest.md)
+
+How to perform t-test using Stata
